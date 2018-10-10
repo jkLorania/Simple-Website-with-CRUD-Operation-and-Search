@@ -1,0 +1,872 @@
+*{
+	margin: 0;
+	display: block;
+	box-sizing: border-box;
+	font-family: Avengeance Heroic Avenger;
+	border: none;
+}
+
+script{
+	display: none;
+}
+
+title{
+	display: none;
+}
+
+body:before{
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	display: block;
+	background-image: url('../img/bg.jpg');
+	background-size:100% 100%;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	/* -webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(3px); */
+}
+
+body div.body_site{
+	z-index: 9999;
+	overflow: auto;
+  	position: relative;
+}
+
+main{
+	padding: 35px 0 35px 0;
+}
+footer{
+    background-color: rgba(255,255,255,0.5);
+}
+main div.main_site{
+	max-width: 1920px;
+	padding: 50px;
+	margin: 0 auto;
+	display: block;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.clearfix{
+	clear: both;
+}
+
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+/*------------header-------------*/
+
+header{
+	padding-top: 0;
+	background-color: rgba(116,116,116,0.3);
+}
+
+header div.banner{
+	background-image: url('../img/banner_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	max-width: 1920px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+header div.banner h1{
+	font-size: 186px;
+	padding: 145px 248px 309px 0;
+	color: grey;
+	text-shadow: -8px 0 black, 0 8px black, 8px 0 black, 0 -8px black;
+}
+
+/*------------footer-------------*/
+
+footer div.footer_site p{
+	text-align: center;
+	font-size: 30px;
+	padding: 30px;
+}
+
+footer div.footer_site ul{
+	list-style-type: none;
+	text-align: center;
+    padding-top: 56px;
+}
+
+footer div.footer_site ul li{
+	display: inline-block;
+	margin: 0 20px;
+}
+
+footer div.footer_site ul li a{
+	text-decoration: none;
+	color: grey;
+	background-color: #FF4106;
+	border: 10px solid black;
+	border-radius: 20px;
+	padding: 20px 40px;
+	font-size: 50px;
+}
+
+footer div.footer_site ul li a:hover,
+footer div.footer_site ul li a:active{
+	color: #FF4106;
+	background-color: black;
+}
+
+
+
+/*------------main-------------*/
+
+main div.main_site h2{
+	font-size: 170px;
+	color: #FF4106;
+	text-align: center;
+	word-spacing: 40px;
+	text-shadow: -10px 0 black, 0 10px black, 10px 0 black, 0 -10px black;
+}
+
+main form.page1_form{
+	margin: 0 auto;
+	display: block;
+	background-color: silver;
+	padding: 50px;
+	width: 800px;
+	border: 5px solid white;
+}
+
+main form div.user_info{
+	margin: 0 auto;
+	display: block;
+}
+
+main form div.user_info label{
+	font-size: 60px;
+	padding-top: 20px;
+	text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
+}
+
+main form div.user_info input{
+	width: 695px;
+	height: 88px;
+	font-size: 50px;
+	text-align: center;
+	border: 5px solid grey;
+	letter-spacing: 5px;
+    background-color: rgb(250, 255, 189);
+    background-image: none;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+main form div.user_info input:hover,
+main form div.user_info input:active{
+	border: 5px solid black;
+}
+
+main form button.btn_reg{
+	margin: 0 auto;
+	display: block;
+	margin-top: 52px;
+	padding: 30px 84px;
+	font-size: 40px;
+	border-radius: 20px;
+	color: #FF4106;
+	background-color: grey;
+	border: 10px solid black;
+}
+
+main form button.btn_reg:hover,
+main form button.btn_reg:active{
+	color: grey;
+	background-color: black;
+}
+
+
+/*----------page2-----------*/
+
+header div.banner h1.page2_h1{
+	font-size: 133px;
+  padding: 76px 216px 270px 0;
+}
+
+main div.main_site div.search_con{
+    float: right;
+    padding: 20px 20px 18px 20px;
+    margin-bottom: 35px;
+    background-color: silver;
+    display: -webkit-inline-box;
+    color: gray;
+    clear: both;
+}
+
+main div.main_site label{
+    font-size: 50px;
+    background-color: silver;
+    padding: 22.5px 30px 2px 10px;
+    line-height: 1;
+    color: black;
+}
+
+main div.main_site #searchid,
+main div.main_site #searchN{
+    color: black;
+    font-size: 45px;
+    padding: 12px 20px 2px 10px;
+    line-height: 1;
+}
+
+.alert-warning {
+    background-color: black;
+    color: grey;
+}
+.table-bordered {
+    border: 1px solid #FF4106;
+}
+.table {
+    width: 100%;
+    display: inline-block;
+}
+table {
+    border-collapse: collapse;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-bordered thead th, .table-bordered thead td {
+    border-bottom-width: 10px;
+}
+.table thead th {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 88px 0;
+}
+.table-bordered thead tr{
+	border-bottom: 10px solid #FF4106;
+}
+.table-bordered tbody{
+    height: 1110px;
+    overflow-y: scroll;
+    background-color: silver; 
+    color: black;
+}
+.table-bordered tbody::-webkit-scrollbar {
+    width: 50px;
+}
+.table-bordered tbody::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 50px #FF4106; 
+}
+.table-bordered tbody::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 30px;
+}
+.table-bordered tbody tr{
+	border-bottom: 5px solid #FF4106;
+}
+.table th, .table td {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px 0;
+}
+th {
+    text-align: left;
+}
+.btn-success {
+    color: black;
+    background-color: #172c3d;
+    width: 235px;
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-danger:hover,
+.btn-danger:active{
+	color: #FF4106;
+	background-color: grey;
+}
+
+.btn-danger {
+    color: black;
+    background-color: #421d16;
+}
+.btn {
+    color: silver;
+    margin: 10px;
+    letter-spacing: 4px;
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 8px solid grey;
+    padding: 20px 40px;
+    font-size: 50px;
+    border-radius: 10px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+input, button, select, textarea {
+    line-height: inherit;
+}
+a, area, button, [role="button"], input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.fade.show {
+    opacity: 1;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+
+.modal.show .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.modal-dialog {
+    width: auto;
+    margin: 50px;
+    background-color: darksalmon;
+}
+.modal-body{
+	margin: 0 auto;
+  display: block;
+  text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
+  color: black;
+}
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: silver;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-header {
+    padding: 15px;
+}
+button.close {
+    padding: 0 20px 6px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    font-size: 78px;
+    font-family: cursive;
+    color: silver;
+    background-color: #421d16;
+    float: right;
+}
+input, button, select, textarea {
+    line-height: inherit;
+}
+a, area, button, [role="button"], input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+.modal-title {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 150px;
+    margin: 0 auto;
+    display: block;
+    text-shadow: -8px 0 #172c3d, 0 8px #172c3d, 8px 0 #172c3d, 0 -8px #172c3d;
+}
+.form-inline {
+  padding: 50px;
+}
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    padding: 26px 26px;
+    margin: 32px 50px;
+    color: maroon;
+}
+.modal-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 15px;
+    border-top: 1px solid #eceeef;
+}
+.modal-footer > :not(:last-child) {
+    margin-right: .25rem;
+}
+
+a.reg_link{
+	font-size: 70px;
+	background-color: darkgray;
+	color: black;
+	padding: 30px 50px;
+	border-radius: 20px;
+	float: right;
+    margin-top: 50px;
+}
+
+a.reg_link:hover,
+a.reg_link:active{
+	color: black;
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1919px) {
+
+header, main, aside, footer {
+    width: 100%;
+}
+main{
+    padding: 1.8vw 0 1.8vw 0;
+}
+main div.main_site{
+    max-width: 1920px;
+    padding: 2.6vw;
+}
+
+
+/*------------header-------------*/
+
+header div.banner h1{
+    font-size: 9.6vw;
+    padding: 7.5vw 12.9vw 16vw 0;
+    text-shadow: -0.4vw 0 black, 0 0.4vw black, .4vw 0 black, 0 -.4vw black;
+}
+
+/*------------footer-------------*/
+
+footer div.footer_site p{
+    font-size: 1.5vw;
+    padding: 1.5vw;
+}
+footer div.footer_site ul{
+    padding-top: 2.9vw;
+}
+footer div.footer_site ul li{
+    margin: 0 1vw;
+}
+footer div.footer_site ul li a{
+    border: 0.5vw solid black;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+    font-size: 2.6vw;
+}
+
+
+/*------------main-------------*/
+
+main div.main_site h2{
+    font-size: 8.8vw;
+    word-spacing: 2.0vw;
+    text-shadow: -0.5vw 0 black, 0 0.5vw black, 0.5vw 0 black, 0 -0.5vw black;
+}
+main form.page1_form{
+    padding: 2.6vw;
+    width: 41.6vw;
+    border: 0.2vw solid white;
+}
+main form div.user_info label{
+    font-size: 3.125vw;
+    padding-top: 1vw;
+    text-shadow: -0.2vw 0 white, 0 0.2vw white, 0.2vw 0 white, 0 -0.2vw white;
+}
+main form div.user_info input{
+    width: 36.1vw;
+    height: 4.5vw;
+    font-size: 2.6vw;
+    border: 0.2vw solid grey;
+    letter-spacing: 0.2vw;
+    margin-bottom: 1.5vw;
+}
+main form div.user_info input:hover,
+main form div.user_info input:active{
+    border: 0.2vw solid black;
+}
+main form button.btn_reg{
+    margin-top: 2.7vw;
+    padding: 1.5vw 4.3vw;
+    font-size: 2.0vw;
+    border-radius: 1vw;
+    border: .5vw solid black;
+}
+
+/*----------page2-----------*/
+
+header div.banner h1.page2_h1{
+    font-size: 5.8vw; 133px;
+    padding: 3.9vw 11.25vw 14.0625vw 0;
+}
+main div.main_site div.search_con{
+    padding: 1vw 1vw 0.9vw 1vw;
+    margin-bottom: 1.8vw;
+}
+main div.main_site label{
+    font-size: 2.6vw;
+    padding: 1.14vw 1.5vw 0.1vw .5vw;
+}
+main div.main_site #searchid,
+main div.main_site #searchN{
+    font-size: 2.3vw;
+    padding: 0.625vw 1vw .1vw .5;
+}
+table {
+    font-size: 3.6vw;
+}
+.table-bordered thead th, .table-bordered thead td {
+    border-bottom-width: .5vw;
+}
+.table thead th {
+    padding: 4.5vw 0;
+}
+.table-bordered thead tr{
+    border-bottom: 0.5vw solid #FF4106;
+}
+.table-bordered tbody{
+    height: 57.81vw;
+}
+.table-bordered tbody::-webkit-scrollbar {
+    width: 2.6vw;
+}
+.table-bordered tbody::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2.6vw;
+}
+.table-bordered tbody::-webkit-scrollbar-thumb {
+    border-radius: 1.5vw;
+}
+.table-bordered tbody tr{
+    border-bottom: 0.2vw solid #FF4106;
+}
+.table th, .table td {
+    padding: 2.6vw 0;
+}
+.btn-success {
+    width: 12.2vw;
+}
+.btn {
+    margin: .5vw;
+    letter-spacing: 0.2vw;
+    border: .4vw solid grey;
+    padding: 1vw 2vw;
+    font-size: 2.6vw;
+    border-radius: .5vw;
+}
+.modal-dialog {
+    margin: 2.6vw;
+}
+.modal-body{
+  text-shadow: -.2vw 0 white, 0 .2vw white, .2vw 0 white, 0 -.2vw white;
+}
+.modal-header {
+    padding: 0.7vw;
+}
+button.close {
+    padding: 0 2vw 0.3vw 2vw;
+    font-size: 4vw;
+}
+.modal-title {
+    font-size: 7.8vw;
+    text-shadow: -0.4vw 0 #172c3d, 0 0.4vw #172c3d, 0.4vw 0 #172c3d, 0 -0.4vw #172c3d;
+}
+.form-inline {
+  padding: 2.6vw;
+}
+.form-inline .form-control {
+    padding: 1.3vw 1.3vw;
+    margin: 1.6vw 2.6vw;
+}
+.modal-footer {
+    padding: 0.7vw;
+}
+
+a.reg_link{
+    font-size: 3.6vw;
+    padding: 1.5vw 2.6vw;
+    border-radius: 1vw; 
+    margin-top: 2.6vw;
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 640px){
+
+main{
+    padding: 5.4vw 0 5.4vw 0; 35px 0 35px 0;
+}
+main div.main_site{
+    padding: 7.8vw; 50px;
+}
+
+
+/*------------header-------------*/
+
+header div.banner h1{
+    font-size: 29vw; 186px;
+    padding: 22.6vw 38.75vw 48.2vw; 145px 248px 309px 0;
+    text-shadow: -1.25vw 0 black, 0 1.25vw black, 1.25vw 0 black, 0 -1.25vw black;
+}
+
+/*------------footer-------------*/
+
+footer div.footer_site p{
+    font-size: 4.6vw; 30px;
+    padding: 4.6vw; 30px;
+}
+footer div.footer_site ul{
+    padding-top: 8.75vw; 56px;
+}
+footer div.footer_site ul li{
+    margin: 0 3.1vw; 0 20px;
+}
+footer div.footer_site ul li a{
+    border: 1.5vw; 10px solid black;
+    border-radius: 3.1vw; 20px;
+    padding: 3.1vw 6.25vw; 20px 40px;
+    font-size: 7.8vw; 50px;
+}
+
+
+
+/*------------main-------------*/
+
+main div.main_site h2{
+    font-size: 26.5vw; 170px;
+    word-spacing: 6.25vw; 40px;
+    text-shadow: -1.5vw 0 black, 0 1.5vw black, 1.5vw 0 black, 0 -1.5vw black;
+}
+main form.page1_form{
+    padding: 7.8vw; 50px;
+    width: 125vw; 800px;
+    border: 0.7vw; 5px solid white;
+}
+main form div.user_info label{
+    font-size: 9.375vw; 60px;
+    padding-top: 3.1vw; 20px;
+    text-shadow: -0.7vw 0 white, 0 7vw white, 7vw 0 white, 0 -7vw white;
+}
+main form div.user_info input{
+    width: 108.5vw; 695px;
+    height: 13.75vw; 88px;
+    font-size: 7.8vw; 50px;
+    border: 0.7vw solid grey;
+    letter-spacing: 0.7vw;
+    margin-bottom: 4.6vw; 30px;
+}
+main form div.user_info input:hover,
+main form div.user_info input:active{
+    border: 0.7vw solid black;
+}
+main form button.btn_reg{
+    margin-top: 8.125vw; 52px;
+    padding: 4.6vw 13.125vw; 30px 84px;
+    font-size: 6.25vw; 40px;
+    border-radius: 3.125vw; 20px;
+    border: 1.5625vw solid black;
+}
+
+
+
+/*----------page2-----------*/
+
+header div.banner h1.page2_h1{
+    font-size: 20.7vw; 133px;
+    padding: 11.875vw 33.75vw 42.1875vw 0;76px 216px 270px 0;
+}
+main div.main_site div.search_con{
+    padding: 3.1vw 3.1vw 2.8vw 3.1vw; 20px 20px 18px 20px;
+    margin-bottom: 5.4vw; 35px;
+}
+main div.main_site label{
+    font-size: 50px;
+    padding: 22.5px 30px 2px 10px;
+}
+main div.main_site #searchid,
+main div.main_site #searchN{
+    color: black;
+    font-size: 45px;
+    padding: 12px 20px 2px 10px;
+}
+.table-bordered {
+    border: 1px solid #FF4106;
+}
+.table {
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    font-size: 70px;
+}
+.table-bordered thead th, .table-bordered thead td {
+    border-bottom-width: 10px;
+}
+.table thead th {
+    width: 18%;
+    padding: 88px 0;
+}
+.table-bordered thead tr{
+    border-bottom: 10px solid #FF4106;
+}
+.table-bordered tbody{
+    height: 1110px;
+}
+.table-bordered tbody::-webkit-scrollbar {
+    width: 50px;
+}
+.table-bordered tbody::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 50px #FF4106; 
+}
+.table-bordered tbody::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+}
+.table-bordered tbody tr{
+    border-bottom: 5px solid #FF4106;
+}
+.table th, .table td {
+    width: 19%;
+    padding: 50px 0;
+}
+.btn-success {
+    width: 235px;
+}
+.btn {
+    margin: 10px;
+    letter-spacing: 4px;
+    border: 8px solid grey;
+    padding: 20px 40px;
+    font-size: 50px;
+    border-radius: 10px;
+}
+.modal-dialog {
+    margin: 50px;
+}
+.modal-body{
+    text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
+}
+.modal-header {
+    padding: 15px;
+}
+button.close {
+    padding: 0 20px 6px 20px;
+    font-size: 78px;
+}
+.modal-title {
+    font-size: 150px;
+    text-shadow: -8px 0 #172c3d, 0 8px #172c3d, 8px 0 #172c3d, 0 -8px #172c3d;
+}
+.form-inline {
+  padding: 50px;
+}
+.form-inline .form-control {
+    padding: 26px 26px;
+    margin: 32px 50px;
+}
+.modal-footer {
+    padding: 15px;
+}
+a.reg_link{
+    font-size: 70px;
+    padding: 30px 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+}
