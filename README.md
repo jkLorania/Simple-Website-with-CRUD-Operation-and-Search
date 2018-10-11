@@ -12,7 +12,7 @@
 
 6.Go to browser, type "http://localhost/crudassemble/index.php".
 
-##Screenshots of output
+## Screenshots of output
 
 This is the index
 ![index](https://user-images.githubusercontent.com/43561786/46796004-7557ee80-cd43-11e8-8160-a191855df4e0.png)
