@@ -1,6 +1,6 @@
 # Simple Website with CRUD Operation and Search
 
-1.Download the Source code.
+1.Download the Source code and extract files.
 
 2.Using Xxamp, start Apache and mySql.
 
